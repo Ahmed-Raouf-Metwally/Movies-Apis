@@ -39,16 +39,7 @@ $("#searchAll").keyup(function () {
 
 $("#searchWord").keyup(function () {
     var str = $("#searchWord").val();
-    if (str == "" && searchFlag == false) {
-        $("#Posts").empty();
-        fire("now_playing", "");
-        $(".nav-category1").addClass("Active");
-        $(".nav-category2").removeClass("Active");
-        $(".nav-category3").removeClass("Active");
-        $(".nav-category4").removeClass("Active");
-        $(".nav-category5").removeClass("Active");
-        $(".nav-category6").removeClass("Active");
-    } else if (searchFlag == true) {
+    if (searchFlag == true) {
         searchdisplayed(str);
         $(".nav-category1").removeClass("Active");
     }
@@ -300,7 +291,7 @@ async function searchAll(str) {
 function searchdisplayed(str) {
     $("#Posts").empty();
     for (let i = 0; i < finalResult.results.length; ++i) {
-        if (finalResult.results[i].title.toLowerCase().includes(str)) {
+        if (finalResult.results[i].title.toLowerCase().includes(str.toLowerCase())) {
             $("#Posts").append(
                 `<div class="col-md-6 col-lg-4 my-3 ">
                 <div class="post">

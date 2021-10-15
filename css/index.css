@@ -194,3 +194,14 @@ body {
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .side-bar-before {
+        width: 50px;
+    }
+    .post-layout{
+        font-size: 11px;
+    }
+}
