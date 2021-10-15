@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Template">
+  <meta name="keywords" content="BootstrapTemplate , Bootstrap , Template ,route exam, JS ,JQuery ">
+  <meta name="author" content="Eng/Ahmed Raouf">
+  <title>JS Exam</title>
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="container">
+  <section class="side-bar">
+    <div class="nav-item">
+      <ul>
+        <li class="item1 "><a class="nav-category nav-category1  " href="#">Now playing</a></li>
+        <li class="item2"><a class="nav-category nav-category2" href="#">Popular</a></li>
+        <li class="item3"><a class="nav-category nav-category3" href="#">Top Rated</a></li>
+        <li class="item4"><a class="nav-category nav-category4" href="#">Trending</a></li>
+        <li class="item5"><a class="nav-category nav-category5" href="#">Upcoming</a></li>
+        <li class="item6"><a class="nav-category nav-category6" href="#contact">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="side-bar-before">
+      <div class="p-3 ">
+        <img class="img-fluid" src="images/logo.png" alt="">
+      </div>
+      <div class="toogle">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+      <div class="social fixed-bottom m-3">
+        <div class="mb-3">
+          <i class="fas fa-share-alt"></i>
+        </div>
+        <div>
+          <i class="fas fa-globe"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <header class="row pt-5">
+    <div class="col-md-6 ">
+      <div>
+        <input id="searchAll" class="form-control-plaintext" placeholder="get movies by word...">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div>
+        <input class="form-control-plaintext" id="searchWord" placeholder="search...">
+      </div>
+    </div>
+  </header>
+  <section id="Posts" class="row p-5 gy-4">
+
+  </section>
+  <footer>
+    <div id="contact" class="container myM w-75 mx-auto my-5 ">
+      <h2 class="text-light my-5">ContacUs...</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group py-3">
+            <input class="form-control-plaintext" id="userName" placeholder="Enter Your Name">
+          </div>
+          <div class="alert visually-hidden alert-danger" id="nameAlert" role="alert">
+            Your name Should Be atleast 3 leters and maximum 20 leters—check it out!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group py-3">
+            <input class="form-control-plaintext" id="email" placeholder="Enter Email">
+
+          </div>
+          <div class="alert visually-hidden alert-danger" id="emailAlert" role="alert">
+            Your Email Should Be im mail format—check it out!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group py-3">
+            <input class="form-control-plaintext" id="phone" placeholder="Enter phone">
+          </div>
+          <div class="alert visually-hidden alert-danger" id="phoneAlert" role="alert">
+            Your pohone Should Be egy numbr—check it out!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group py-3">
+            <input class="form-control-plaintext" id="age" placeholder="Enter Age">
+          </div>
+          <div class="alert visually-hidden alert-danger" id="ageAlert" role="alert">
+            Entre valid Age minimum age of 1, maximum age of 110 —check it out!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group py-3">
+            <input class="form-control-plaintext" type="password" id="password" placeholder="Enter Password">
+          </div>
+          <div class="alert visually-hidden alert-danger" id="passWordAlert" role="alert">
+            Entre valid password Minimum eight characters, at least one letter and one number —check it out!
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group py-3">
+            <input class="form-control-plaintext" type="password" id="rePassword" placeholder="Enter RePassword">
+          </div>
+          <div class="alert visually-hidden alert-danger" id="rePassWordAlert" role="alert">
+            Not Match! —check it out!
+          </div>
+        </div>
+      </div>
+      <div class="py-2">
+        <button type="submit" id="submitBtn" class="btn btn-outline-danger disabled ">Submit</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
